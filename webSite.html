@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SpiderNet Login Sign</title>
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body
     style="
@@ -16,19 +17,7 @@
     "
   >
     <div id="LoginWrapper">
-      <div
-        id="Background"
-        style="
-          background-size: cover;
-          display: block;
-          height: 100%;
-          min-height: 100vh;
-          overflow: hidden;
-          position: absolute;
-          width: 100%;
-          z-index: -1;
-        "
-      >
+      <div id="backGround">
         <img
           src="https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/6ae246b1-b424-4e72-a217-f7895602959a/VN-vi-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg"
           alt="Spiderman Background"
@@ -36,20 +25,7 @@
         />
       </div>
 
-      <div
-        id="Header"
-        style="
-          left: 0;
-          position: absolute;
-          top: 0;
-          width: 100%;
-          background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.5) 0,
-            transparent
-          );
-        "
-      >
+      <div id="heaDer">
         <a>
           <img
             src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
@@ -61,339 +37,67 @@
         </a>
       </div>
 
-      <div
-        id="LoginBody"
-        style="
-          background-color: transparent;
-          margin: 0 auto -236px;
-          max-width: 450px;
-          min-height: 100vh;
-          color: #333;
-          padding: 0 5%;
-        "
-      >
-        <div
-          id="LoginBodyBefore"
-          style="content: none; display: block; height: 122px"
-        ></div>
-        <div id="LoginScreen">
-          <div
-            id="HybridLoginForm"
-            style="
-              min-height: 624px;
-              margin-bottom: 90px;
-              padding: 60px 68px 68px;
-              background-color: rgba(0, 0, 0, 0.75);
-              border-radius: 4px;
-              box-sizing: border-box;
-              display: flex;
-              flex-direction: column;
-              margin: 0;
-              width: 100%;
-            "
-          >
+      <div id="loginBody">
+        <div id="loginBodyBefore"></div>
+        <div id="loginScreen">
+          <div id="hybridLoginForm">
             <div id="HybridLoginFormMain" style="flex-grow: 1">
-              <h1
-                style="
-                  color: #fff;
-                  font-size: 32px;
-                  font-weight: 500;
-                  margin-bottom: 28px;
-                  margin-top: 0;
-                "
-              >
-                Đăng nhập
-              </h1>
+              <h1 id="dangNhap">Đăng nhập</h1>
               <form
                 method="post"
                 id="LoginForm"
                 style="margin-bottom: 0"
                 action
               >
-                <div
-                  id="EmailPhone"
-                  style="padding-bottom: 16px; max-width: 100%"
-                >
-                  <div id="InputPlacement" style="position: relative">
-                    <div
-                      id="EmailPhoneControl"
-                      style="border: 0; border-radius: 4px"
-                    >
+                <div id="emailPhone">
+                  <div id="inputPlacement" style="position: relative">
+                    <div id="emailPhoneControl">
                       <label id="InputID" placeholder>
-                        <input
-                          type="text"
-                          style="
-                            background: #333;
-                            border: 0;
-                            border-radius: 4px;
-                            color: #fff;
-                            height: 50px;
-                            line-height: 50px;
-                            padding: 16px 76px 0;
-                            box-sizing: border-box;
-                          "
-                          dir
-                          placeholder
-                        />
-                        <label
-                          style="
-                            left: 20px;
-                            font-size: 16px;
-                            color: #8c8c8c;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            transition: font 0.1s ease, top 0.1s ease,
-                              transform 0.1s ease;
-                          "
+                        <input class="inPut" type="text" dir placeholder />
+                        <label class="placeholderText"
                           >Email hoặc số điện thoại</label
                         >
                       </label>
                     </div>
                   </div>
                 </div>
-                <div
-                  id="Password"
-                  style="
-                    padding-bottom: 16px;
-                    max-width: 100%;
-                    position: relative;
-                    z-index: 0;
-                  "
-                >
-                  <div id="InputPlacement" style="position: relative">
-                    <div
-                      id="PasswordControl"
-                      style="
-                        background: #333;
-                        border: 0;
-                        border-radius: 4px;
-                        display: flex;
-                      "
-                    >
-                      <label id="InputID" style="flex-grow: 1">
-                        <input
-                          type="password"
-                          style="
-                            background: #333;
-                            border: 0;
-                            border-radius: 4px;
-                            color: #fff;
-                            height: 50px;
-                            line-height: 50px;
-                            padding: 16px 76px 0;
-                            box-sizing: border-box;
-                          "
-                          dir
-                          placeholder
-                        />
-                        <label
-                          id="IDpassword"
-                          style="
-                            left: 20px;
-                            font-size: 16px;
-                            color: #8c8c8c;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            transition: font 0.1s ease, top 0.1s ease,
-                              transform 0.1s ease;
-                          "
-                          >Mật khẩu</label
-                        >
+                <div id="passWord">
+                  <div id="inputPlacement" style="position: relative">
+                    <div id="passwordControl">
+                      <label id="inputID" style="flex-grow: 1">
+                        <input class="inPut" type="password" dir placeholder />
+                        <label class="placeholderText">Mật khẩu</label>
                       </label>
-                      <button
-                        title="Hiện mật khẩu"
-                        style="
-                          display: none;
-                          height: 50px;
-                          padding: 0 12px;
-                          appearance: none;
-                          background: transparent;
-                          border: 0;
-                          color: #8c8c8c;
-                          flex-grow: 0;
-                          flex-shrink: 0;
-                          font-size: 14px;
-                          cursor: pointer;
-                          text-transform: none;
-                          overflow: visible;
-                          font: inherit;
-                          margin: 0;
-                        "
-                      >
-                        Hiện
-                      </button>
+                      <button id="showPass" title="Hiện mật khẩu">Hiện</button>
                     </div>
                   </div>
                 </div>
-                <button
-                  style="
-                    border-radius: 4px;
-                    font-size: 16px;
-                    font-weight: 500;
-                    margin: 24px 0 12px;
-                    max-width: 100%;
-                    width: 100%;
-                    padding: 16px;
-                    background: #e50914;
-                    display: inline-block;
-                    line-height: 1em;
-                    min-height: 37px;
-                    min-width: 98px;
-                    font: inherit;
-                    position: relative;
-                    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.55);
-                    color: #fff;
-                    box-sizing: border-box;
-                    cursor: pointer;
-                    text-align: center;
-                    text-decoration: none;
-                    user-select: none;
-                    vertical-align: middle;
-                    overflow: visible;
-                  "
-                >
-                  Đăng nhập
-                </button>
-                <div id="FormHelp" style="display: flex">
-                  <div
-                    id="RememberMe"
-                    style="
-                      flex-grow: 1;
-                      padding-left: 20px;
-                      box-sizing: border-box;
-                      font-size: 16px;
-                      position: relative;
-                      user-select: none;
-                      display: inline-block;
-                      margin-bottom: -5px;
-                    "
-                  >
-                    <input
-                      type="checkbox"
-                      style="
-                        left: 0;
-                        opacity: 0;
-                        position: absolute;
-                        top: 0;
-                        margin-right: 10px;
-                        box-sizing: border-box;
-                        padding: 0;
-                        line-height: normal;
-                        color: inherit;
-                        font: inherit;
-                        margin: 0;
-                      "
-                      checked
-                    />
-                    <label
-                      id="RememberMeText"
-                      style="
-                        padding: 0;
-                        color: #333;
-                        display: block;
-                        line-height: 1.2;
-                        position: relative;
-                      "
-                    >
-                      <input
-                        type="checkbox"
-                        style="
-                          background: #8c8c8c;
-                          box-shadow: none;
-                          border: 0;
-                          border-radius: 2px;
-                          height: 16px;
-                          left: -20px;
-                          width: 16px;
-                          content: none;
-                          display: block;
-                          padding: 0;
-                          position: absolute;
-                          top: 2px;
-                        "
-                      />
-                      <span
-                        style="
-                          font-family: sans-serif;
-                          color: #8c8c8c;
-                          font-size: 13px;
-                          font-weight: 400;
-                        "
-                        >Ghi nhớ tôi</span
-                      >
+                <button id="buttonLogin">Đăng nhập</button>
+                <div id="formHelp" style="display: flex">
+                  <div id="rememberMe">
+                    <input id="checkboxTick" type="checkbox" checked />
+                    <label id="rememberMeText">
+                      <input id="checkboxTick2" type="checkbox" />
+                      <span id="rememberMeWord">Ghi nhớ tôi</span>
                     </label>
-                    <div id="Helper"></div>
+                    <div id="helPer"></div>
                   </div>
-                  <a
-                    id="HelpForm"
-                    style="
-                      font-family: sans-serif;
-                      color: #8c8c8c;
-                      font-size: 13px;
-                      font-weight: 400;
-                      padding-top: 2px;
-                    "
-                    >Bạn cần trợ giúp?</a
-                  >
+                  <a id="helpForm">Bạn cần trợ giúp?</a>
                 </div>
               </form>
             </div>
-            <div id="HybridLoginFormOther" style="flex: 0 0 1">
-              <div
-                id="LoginSignUp"
-                style="
-                  color: #737373;
-                  font-size: 16px;
-                  font-weight: 400;
-                  margin-top: 16px;
-                "
-              >
-                Bạn mới tham gia SpiderNet?
-                <a
-                  id="SignUp"
-                  style="
-                    color: #fff;
-                    background-color: transparent;
-                    text-decoration: none;
-                  "
-                  >Đăng ký ngay.</a
-                >
+            <div id="hybridLoginFormOther" style="flex: 0 0 1">
+              <div id="loginSignUp">
+                Bạn mới tham gia Netflix?
+                <a id="signUp">Đăng ký ngay.</a>
               </div>
-              <div
-                id="Term"
-                style="
-                  color: #8c8c8c;
-                  font-size: 13px;
-                  margin-top: 11px;
-                  position: relative;
-                  text-align: left;
-                "
-              >
+              <div id="termParagh">
                 <p>
                   <span
                     >Trang này được Google reCAPTCHA bảo vệ để đảm bảo bạn không
                     phải là robot.</span
                   >
-                  <button
-                    style="
-                      background-color: transparent;
-                      border: none;
-                      color: #0071eb;
-                      cursor: pointer;
-                      display: inline;
-                      font-family: inherit;
-                      font-size: inherit;
-                      padding: 0;
-                      text-transform: none;
-                      overflow: visible;
-                      font: inherit;
-                      margin: 0;
-                    "
-                  >
-                    Tìm hiểu thêm.
-                  </button>
+                  <button id="showTerm">Tìm hiểu thêm.</button>
                 </p>
               </div>
             </div>
