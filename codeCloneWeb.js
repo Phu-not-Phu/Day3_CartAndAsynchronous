@@ -1,3 +1,5 @@
+import data from "./data.json" assert { type: "json" };
+
 let body = document.body;
 body.style = `margin: 0; font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;`;
 
@@ -183,73 +185,28 @@ let itemList = document.createElement("div");
 itemList.style.display = "grid";
 itemList.style.gridGap = "1rem";
 itemList.style.gridTemplateColumns = "repeat(auto-fit, minmax(400px, 1fr))";
-function addItemList() {
-  let newItemCard1 = buildItemCard(
-    "Datejust 36",
-    "Oyster, 36 mm, Oystersteel và vàng trắng",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126234-0051.png"
-  );
-  itemList.appendChild(newItemCard1);
 
-  let newItemCard2 = buildItemCard(
-    "Submariner Date",
-    "Oyster, 41 mm, thép Oystersteel",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126610ln-0001.png"
-  );
-  itemList.appendChild(newItemCard2);
-
-  let newItemCard3 = buildItemCard(
-    "Submariner Date",
-    "Oyster, 41 mm, thép Oystersteel",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126500ln-0001.png"
-  );
-  itemList.appendChild(newItemCard3);
-
-  let newItemCard4 = buildItemCard(
-    "Submariner",
-    "Oyster, 41 mm, thép Oystersteel",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m124060-0001.png"
-  );
-  itemList.appendChild(newItemCard4);
-
-  let newItemCard5 = buildItemCard(
-    "Submariner Date",
-    "Oyster, 41 mm, thép Oystersteel",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126610lv-0002.png"
-  );
-  itemList.appendChild(newItemCard5);
-
-  let newItemCard6 = buildItemCard(
-    "1908",
-    "39 mm, vàng kim 18 ct, phủ bóng",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m52508-0006.png"
-  );
-  itemList.appendChild(newItemCard6);
-
-  let newItemCard7 = buildItemCard(
-    "Cosmograph Daytona",
-    "Oyster, 40 mm, bạch kim",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126506-0001.png"
-  );
-  itemList.appendChild(newItemCard7);
-
-  let newItemCard8 = buildItemCard(
-    "Yacht-Master 42",
-    "Oyster, 42 mm, titanium RLX",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m226627-0001.png"
-  );
-  itemList.appendChild(newItemCard8);
-
-  let newItemCard9 = buildItemCard(
-    "Sky-Dweller",
-    "Oyster, 42 mm, vàng trắng",
-    "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m336239-0002.png"
-  );
-  itemList.appendChild(newItemCard9);
-
-  return itemList;
+class Watch {
+  constructor(name, description, imageURL) {
+    this.name = name;
+    this.description = description;
+    this.imageURL = imageURL;
+  }
 }
 
-let newItemList = addItemList();
+/**
+ * @param {Watch[]}
+ */
 
-container.appendChild(newItemList);
+let listOfWatches = [...data];
+
+for (let i = 0; i < listOfWatches.length; i++) {
+  let newItemCard = buildItemCard(
+    listOfWatches[i].name,
+    listOfWatches[i].description,
+    listOfWatches[i].imageURL
+  );
+  itemList.appendChild(newItemCard);
+}
+
+container.appendChild(itemList);
