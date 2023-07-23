@@ -1,39 +1,65 @@
 [
-    {
-        "name": "Datejust 36",
-        "description": "Oyster, 36 mm, Oystersteel và vàng trắng",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126234-0051.png"
-    },{
-        "name": "Submariner Date",
-        "description": "Oyster, 41 mm, thép Oystersteel",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126610ln-0001.png"
-    },{
-        "name": "Submariner Date",
-        "description": "Oyster, 41 mm, thép Oystersteel",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126500ln-0001.png"
-    },{
-        "name": "Submariner",
-        "description": "Oyster, 41 mm, thép Oystersteel",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m124060-0001.png"
-    },{
-        "name": "Submariner Date",
-        "description": "Oyster, 41 mm, thép Oystersteel",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126610lv-0002.png"
-    },{
-        "name": "1908",
-        "description": "39 mm, vàng kim 18 ct, phủ bóng",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m52508-0006.png"
-    },{
-        "name": "Cosmograph Daytona",
-        "description": "Oyster, 40 mm, bạch kim",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126506-0001.png"
-    },{
-        "name": "Yacht-Master 42",
-        "description": "Oyster, 42 mm, titanium RLX",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m226627-0001.png"
-    },{
-        "name": "Sky-Dweller",
-        "description": "Oyster, 42 mm, vàng trắng",
-        "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m336239-0002.png"
-    }
+  {
+    "id": "D36",
+    "name": "Datejust 36",
+    "description": "Oyster, 36 mm, Oystersteel và vàng trắng",
+    "price": "222",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126234-0051.png"
+  },
+  {
+    "id": "SMDB",
+    "name": "Submariner Date",
+    "description": "Oyster, 41 mm, thép Oystersteel",
+    "price": "256",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126610ln-0001.png"
+  },
+  {
+    "id": "CDW",
+    "name": "Cosmograph Daytona",
+    "description": "Oyster, 40 mm, thép Oystersteel",
+    "price": "376",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126500ln-0001.png"
+  },
+  {
+    "id": "SM",
+    "name": "Submariner",
+    "description": "Oyster, 41 mm, thép Oystersteel",
+    "price": "227",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m124060-0001.png"
+  },
+  {
+    "id": "SMDG",
+    "name": "Submariner Date",
+    "description": "Oyster, 41 mm, thép Oystersteel",
+    "price": "269",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126610lv-0002.png"
+  },
+  {
+    "id": "O1908",
+    "name": "1908",
+    "description": "39 mm, vàng kim 18 ct, phủ bóng",
+    "price": "548",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m52508-0006.png"
+  },
+  {
+    "id":"CDP",
+    "name": "Cosmograph Daytona",
+    "description": "Oyster, 40 mm, bạch kim",
+    "price": "476",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m126506-0001.png"
+  },
+  {
+    "id":"YM42",
+    "name": "Yacht-Master 42",
+    "description": "Oyster, 42 mm, titanium RLX",
+    "price": "350",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m226627-0001.png"
+  },
+  {
+    "id":"SD",
+    "name": "Sky-Dweller",
+    "description": "Oyster, 42 mm, vàng trắng",
+    "price": "1063",
+    "imageURL": "https://content.rolex.com/v7/dam/2023-06/upright-bba-with-shadow/m336239-0002.png"
+  }
 ]
