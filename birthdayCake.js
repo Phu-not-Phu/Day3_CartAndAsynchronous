@@ -43,17 +43,6 @@ function inputInfor() {
       });
     });
 
-    // if (moneyGet >= priceL) {
-    //   size = "L";
-    //   cakePrice = 510000;
-    // } else if (moneyGet >= priceM) {
-    //   size = "M";
-    //   cakePrice = 233000;
-    // } else if (moneyGet >= priceS) {
-    //   size = "S";
-    //   cakePrice = 169000;
-    // }
-
     if (name != "" && age > 0 && size != "") {
       resolve("Dữ liệu nhập thành công \n----------------------------");
     } else {
@@ -68,10 +57,9 @@ async function askForMoney() {
   return new Promise(async (resolve, rejects) => {
     console.log("Xin tiền mẹ mua bánh: ");
 
-    await new Promise((resolve, rejects) => {
+    moneyGet = await new Promise((resolve, rejects) => {
       rl.on("line", (input) => {
-        moneyGet = parseInt(input);
-        resolve();
+        resolve(parseInt(input));
       });
     });
 
@@ -157,6 +145,10 @@ async function eatCake() {
   console.log("Quất cái bánh!!!!!");
   await wait(1);
   console.log("============================");
+  let tienThua = moneyGet - cakePrice;
+  console.log(moneyGet);
+  console.log(cakePrice);
+  console.log(`Tiền còn thừa: ${tienThua}`);
 }
 
 let main = async function () {
@@ -182,6 +174,7 @@ let main = async function () {
     .catch((value) => {
       console.log(value);
       console.log("Nghèo");
+      rl.close();
     });
 };
 
